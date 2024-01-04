@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spotify-clone</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/utility.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <script src="https://kit.fontawesome.com/285df39516.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="top left-div-cont">
+                <div class="close">
+                    <i class="fa-solid fa-xmark fa-lg" style="color: #ffffff;"></i>
+                </div>
+                <div class="home">
+                    <div class="logo">
+                        <img id="spotify-logo" src="./img/logo.svg" alt="spotify-logo">
+                    </div>
+                    <ul>
+                        <li><img src="./img/home.svg" alt="home"><span id="home">Home</span></li>
+                        <li id="srch-li"><img id="search-img" src="./img/search.svg" alt="search"><span
+                                id="search">Search</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="bottom left-div-cont">
+                <div class="lib-top-cont">
+                    <div class="lib">
+                        <img src="./img/library.svg" alt="library icon">
+                        <span id="library">Your Library</span>
+                    </div>
+                    <div title="click, to create your playlist" class="icon">
+                        <img src="./img/plus.svg" alt="plus-icon">
+                    </div>
+                </div>
+                <div class="lib-mid-cont">
+                    <!-- adding the below commented div with javascript, so don't uncommen it -->
+                    <!-- <div class="cont1 crt dis">
+                        <div class="lines">
+                            <h3>Create your first playlist</h3>
+                            <span>it's easy we will help you</span>
+                        </div>
+                        <button class="lib-btn">Create playlist</button>
+                    </div>
+                    <div class="cont2 crt dis">
+                        <div class="lines">
+                            <h3>Let's find some podcast to follow</h3>
+                            <span>we will keep you posted on new episodes</span>
+                        </div>
+                        <button class="lib-btn">Browse Podcast</button>
+                    </div> -->
+                    <div class="songslist">
+                        <ul>
+                            <!-- <li>
+                                <i id ="ic"class="fa-solid fa-music fa-sm" style="color: #ffffff;"></i>
+                                <div class="info">
+                                    <div><span>Song name</span></div>
+                                    <div><span>Song artist</span></div>
+                                </div>
+                                <div class="playnow">
+                                    <span>Play now</span>
+                                    <i class="fa-solid fa-play fa-lg music-icon" style="color: #ffffff;"></i>
+                                </div>
+                            </li>  -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="lib-bottom-cont">
+                    <div class="links">
+                        <span><a href="#">Legal</a></span>
+                        <span><a href="#">Privacy Centre</a></span>
+                        <span><a href="#">Privacy Policy</a></span>
+                        <span><a href="#">Cookies</a></span>
+                        <span><a href="#">About Ads</a></span>
+                        <span><a href="#">Accessibilty</a></span>
+                    </div>
+
+                    <div class="lib-last-btn">
+                        <button id="last-btn-left"><i class="fa-solid fa-globe fa-3xs"
+                                style="color: #ffffff;"></i>&nbsp;<span> English</span></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="right  right-div-cont">
+            <header>
+                <nav>
+                    <div class="ham-btn">
+                        <div class="hamburger">
+                            <i class="fa-solid fa-bars fa-lg" style="color: #ffffff;"></i>
+                        </div>
+                        <div class="btns-1">
+                            <button class="circular-btn"><i class="fa-solid fa-chevron-left fa-3xs"
+                                    style="color: #ffffff;"></i></button>
+                            <button class="circular-btn"><i class="fa-solid fa-chevron-right fa-3xs"
+                                    style="color: #ffffff;"></i></button>
+                        </div>
+                    </div>
+                    <div class="btns-2">
+                        <button id="sign-in">Sign up</button>
+                        <button id="log-in">Log in</button>
+                    </div>
+                </nav>
+            </header>
+            <main>
+                <div class="spotify-playlist">
+                    <div class="sp-head">
+                        <h2>Spotify Playlists</h2>
+                        <span id="show">Show all</span>
+                    </div>
+                    <div class="cardContainer">
+                        <!-- <div data-folder="ncs" class="card">
+                            <div class="play-button-container">
+                                
+                                <div class="play-button"></div>
+                            </div>
+                            <img src="tyswft.png" alt="Taylor_swift_img">
+                            <h3>Today's Top Hits!</h3>
+                            <p>Taylor Swift is on top of the Hottest 50!</p>
+                        </div>
+                        <div data-folder="ams" class="card">
+                            <div class="play-button-container">
+                                
+                                <div class="play-button"></div>
+                            </div>
+                            <img src="tyswft.png" alt="Taylor_swift_img">
+                            <h3>Today's Top Hits!</h3>
+                            <p>Taylor Swift is on top of the Hottest 50!</p>
+                        </div>
+                        <div class="card">
+                            <div class="play-button-container">
+                               
+                                <div class="play-button"></div>
+                            </div>
+                            <img src="tyswft.png" alt="Taylor_swift_img">
+                            <h3>Today's Top Hits!</h3>
+                            <p>Taylor Swift is on top of the Hottest 50!</p>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="songbuttons">
+                        <div class="prev">
+                            <i class="fa-solid fa-backward fa-lg music-icon" style="color: #ffffff;"></i>
+                        </div>
+
+                        <div class="play">
+                            <i class="fa-solid fa-play fa-lg music-icon" style="color: #ffffff;"></i>
+                        </div>
+
+                        <div class="next">
+                            <i class="fa-solid fa-forward fa-lg music-icon" style="color: #ffffff;"></i>
+                        </div>
+
+                    </div>
+                    <div class="songinfo">
+                        <div class="songname">
+
+                        </div>
+                        <div class="songduration">
+
+                        </div>
+                    </div>
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
